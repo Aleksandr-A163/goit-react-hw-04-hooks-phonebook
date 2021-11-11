@@ -1,0 +1,36 @@
+.text {
+  color: royalblue;
+  margin: 0 auto;
+}
+
+.deleteBtn {
+  margin: 10px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 5px 10px 5px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  border-radius: 10px;
+  color: white;
+}
+.deleteBtn::after {
+  content: "";
+  background-color: #c08f56;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  transition: 0.7s;
+  border-radius: 10px;
+}
+
+.deleteBtn:hover::after {
+  transform: scale(1.1);
+  background-color: rgb(231, 63, 63);
+  border: 0.5px solid rgb(221, 122, 122);
+}
